@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+#page-top {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    right: 16px;
+    bottom: 18px;
+    p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: #3b3b3b;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        &:hover {
+            background: #8b8b8b;
+        }
+    }
+}
+
+#move-page-top {
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+}
+
+@media screen and (min-width: 780px) {
+}

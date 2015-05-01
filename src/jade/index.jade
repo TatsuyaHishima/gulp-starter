@@ -1,0 +1,21 @@
+extends inc/core/_base
+block title
+  - var title = ''
+  title= title
+block prepend meta
+  - var sitename = name
+  - var keywords = 'keywords'
+  - var description = 'description'
+  - var ogpimage = 'ogpimage'
+  - var bodyClass = 'home'
+block append meta
+block body
+
+    include inc/layout/_l-header
+    h1 Hello, World!
+
+    #page-top
+        p: a#move-page-top ▲
+    include inc/layout/_l-footer
+
+block append scriptFooter
