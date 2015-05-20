@@ -92,6 +92,11 @@ gulp.task('js', function() {
         }));
 });
 
+gulp.task('js:vendor', function() {
+    return gulp.src(paths.srcJs + '/vendor/')
+        .pipe(gulp.dest('./dist/js/vendor'));
+});
+
 /*------------------------------------------------------------------------------
  * [Task] image
 ------------------------------------------------------------------------------*/
@@ -109,7 +114,7 @@ gulp.task('img', function() {
 ------------------------------------------------------------------------------*/
 gulp.task('default', ['server', 'img', 'jade', 'scss', 'js'], function() {
     gulp.watch([paths.srcJade + '/**/*.jade'], ['jade']);
-    gulp.watch([paths.srcJs + '/**/*.js'], ['js']);
+    gulp.watch([paths.srcJs + '/**/*.js'], ['js', 'js:vendor']);
     gulp.watch([paths.srcScss + '/**/*.scss'], ['scss']);
     gulp.watch([paths.srcImg + '/**/*.*'], ['img']);
 });
