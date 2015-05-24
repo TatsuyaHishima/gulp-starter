@@ -87,7 +87,7 @@ gulp.task('font', function() {
  * 6. [Task] js
 ------------------------------------------------------------------------------*/
 gulp.task('js', function() {
-    gulp.src(paths.srcJs + '/**/*.js')
+    gulp.src(paths.srcJs + '/*.js')
         .pipe(plumber())
         .pipe(concat('all.min.js'))
         .pipe(uglify())
@@ -99,7 +99,7 @@ gulp.task('js', function() {
 
 gulp.task('js:vendor', function() {
     return gulp.src(paths.srcJs + '/vendor/**/*.js')
-        .pipe(gulp.dest(paths.srcJs + '/vendor'));
+        .pipe(gulp.dest(paths.distJs + '/vendor'));
 });
 
 /*------------------------------------------------------------------------------
@@ -121,5 +121,6 @@ gulp.task('default', ['server', 'img', 'jade', 'scss', 'font', 'js', 'js:vendor'
     gulp.watch([paths.srcJade + '/**/*.jade'], ['jade']);
     gulp.watch([paths.srcJs + '/**/*.js'], ['js', 'js:vendor']);
     gulp.watch([paths.srcScss + '/**/*.scss'], ['scss']);
+    gulp.watch([paths.srcScss + '/fonts/**/*.*'], ['font']);
     gulp.watch([paths.srcImg + '/**/*.*'], ['img']);
 });
