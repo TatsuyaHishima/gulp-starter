@@ -16,8 +16,8 @@ This needs following module,
 - sass
 - compass
 
-私の環境では、
-In my case,
+私の環境では、OSはUbuntu 12.04で
+In my case, I'm using Ubuntu 12.04 and
 
 ```
 $ node -v
