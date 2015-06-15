@@ -4,7 +4,7 @@
 ------------------------------------------------------------------------------*/
 
 var gulp        = require('gulp');
-var jade        = require('gulp-jade-php');
+var jade        = require('gulp-jade');
 var imagemin    = require('gulp-imagemin');
 var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
