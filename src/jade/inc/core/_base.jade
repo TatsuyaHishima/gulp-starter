@@ -21,6 +21,11 @@ html
       link(rel='shortcut icon', href='img/favicon.ico')
       //- link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
       link(rel='stylesheet', href='css/app.css')
+    block script
+      // if lt IE 9
+        script(src="http://html5shiv.googlecode.com/svn/trunk/html5.js")
+        script(src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js")
+
   body
     block body
     block scriptFooter

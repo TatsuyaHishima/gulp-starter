@@ -14,7 +14,7 @@
       "gulp-uglify"     : "~1.2.0",
       "gulp-plumber"    : "~1.0.0",
       "gulp-ruby-sass"  : "^1.0.0-alpha",
-      "gulp-jade"   : "^1.0.0",
+      "gulp-jade-php"   : "^1.0.0",
       "gulp-pleeease"   : "*",
       "try-thread-sleep": "^1.0.0",
   }
