@@ -21,6 +21,17 @@ This needs following module,
 - sass
 - compass
 
+```
+$ rbenv -v
+rbenv 0.4.0
+$ rbenv install 2.2.2
+$ rbenv local 2.2.2
+$ gem install sass
+$ gem install compass
+$ rbenv rehash
+
+```
+
 動作が確認されている環境は
 In my case, 
 
