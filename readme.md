@@ -52,4 +52,6 @@ node-moduleファイルが出来たことを確認して、
 Check there are node-module directory,
 ```
 gulp
+or 
+node_modules/gulp/bin/gulp.js
 ```
